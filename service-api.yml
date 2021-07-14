@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  service-api:
+    lang: dockerfile
+    handler: ./service-api
+    image: kairemor/service-api:latest
+
